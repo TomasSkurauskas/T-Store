@@ -1,0 +1,43 @@
+/* CSS Document */
+
+.menu a
+{
+   text-decoration : none;
+}
+
+.menu ul li span, /* span is used to identify drop-down title */
+.menu a
+{
+   display          : block;      /* Expand hyperlink to fill container*/
+    transition-duration:2s;
+      
+}
+
+.menu ul li:hover span,
+.menu a:hover,
+.menu a:active
+{
+   background-color : #ddd;
+   color            : #0ac;
+   transition-duration:1s;
+   border-radius: 10px;
+}
+
+.menu ul
+{
+   list-style : none;  /* Remove the bullet from list items */
+   padding    : 0px;   /* Remove default padding from list items */
+   margin     : 0px;
+}
+
+.menu li
+{
+   width      : 80px;     /* width for each list item. Not absolutely necessary for horizontal menus. */
+   text-align : center;  /* Not needed for either menu. */
+}
+
+.menu.horizontal li
+{
+   display : inline-block;  /* Force list items onto same line. */
+ /*  float   : left;            /* Force list items tight together. */
+}
