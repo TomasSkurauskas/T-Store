@@ -13,6 +13,7 @@ table, td, th
   margin-right : auto;
 border:1px solid black;
 }
+
  body{
 	background-image:url("../images/background.jpg");
 	background-color:#cccccc;
@@ -41,9 +42,21 @@ div#container
   margin-left  : auto;
   margin-right : auto;
   border-radius : 25px;
-  background
+  border : thin red solid;
+
   }
   
+ #login
+	 {	
+	margin-top:400px;
+	margin-left  : auto;
+ 	margin-right : auto;
+	text-align:center
+	width:500px;
+ 	border : thin orange solid;
+	border-radius : 25px;
+	color:#FFF;
+ }
 
 div#banner
 {
