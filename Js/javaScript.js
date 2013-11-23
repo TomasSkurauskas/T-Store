@@ -1,5 +1,3 @@
-
-
 var itemName = new Array();
 	itemName[0] = "Apple";
 	itemName[1] = "Apricot";
