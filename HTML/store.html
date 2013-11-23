@@ -2,58 +2,63 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-<link rel="stylesheet" type="text/css" href="../CSS/menuStyle.css">
 <script src="../Js/javaScript.js"></script>
 </style>
 </head>
 
-<body>
+<body onLoad="start()">
 <div id = "container">
 
-  <div id = "banner">
-  Banner
-  </div>
-
-  <div id = "topmenu">
-  
-<div class="horizontal menu">
-<ul>
-   <li><a href="../home/home.html">Fruits</a></li>
-   <li><a href="../about_us/about_us.html">About Us</a></li>  
-</ul>
+<div id = "logo"><h1>T-Store</h1></div>
+<div id = "checkout">
+<form>
+      <label>Subtotal: </label><label id = "subtotal"></label><br />
+      <label>Vat: </label><label  id = "subtotal"></label><br />
+      <label>Total: </label><label  id = "subtotal"></label><br />
+      
+      </form>
 </div>
 
-  </div>
-  <div id = "items">
-  <p><button class = "button" type="button" onClick="printDiv()">Apple</button>
-  <button class = "button" type="button">Orange</button>
-  <button class = "button" type="button">Apple</button>
-  <button class = "button" type="button">Apple</button>
-  <button class = "button" type="button">Apple</button>
-  <button class = "button" type="button">Apple</button>
-  <button class = "button" type="button">Apple</button>
-  <button class = "button" type="button">Apple</button><button class = "button" type="button">Apple</button></p>
-  
-  </div>
-      <div id = "receipt">
-      fadfadafdfa
-      <table>
-      <tr>
-      <th>item</th>
-      <th>item</th>
-      <th>item</th>
-      <th>item</th>
-      </tr>
-      <tr>
-      
-      </tr>
-      </table>
-      </div>
-      
-  
-  <div id = "copyright">
-  Copyright &copy; 2013
-  </div>
+<div id = "itemInputBar">
+    	<form>
+      <label>Item</label>
+      <input id="item" type="text" value="" /> 
+      <label>Price</label>
+      <input id="amount" type="text" value="" />    
+      <label>Quantity</label>
+      <input id="quant" type="text" value="" />     
+      <input type="button" onclick="EnteritemDetails()"value="Enter" />
+    </form>
+    </div>
+<div id = "itemsButtons">
+
+
+</div>
+	
+  <!--Start of receipt-->
+    <div id = "invoice">
+    <table>
+    <tr>
+    <th id = "no">No</th>
+    <th id = "item">Item</th>
+    <th id = "price">Price</th>
+    <th id = "quantity">Q</th>
+    <th id = "total">Total</th>
+    
+    </tr>
+    <br/>
+    </table>
+    <table id="receipt">
+    </table>
+    
+   
+    </div>
+    
+
+<div id = "copyright">
+Copyright &copy; Tomas Skurauskas 2013
+</div>
+
 
 </div 
 
